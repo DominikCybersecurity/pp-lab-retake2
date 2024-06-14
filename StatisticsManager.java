@@ -3,6 +3,14 @@ import java.util.*;
 public class StatisticsManager implements StatisticsOperations {
     private List<DataSet> dataSets = new ArrayList<>();
 
+    public StatisticsManager() {
+    
+        
+        dataSets.add(new DataSet("Zbiór 1"));
+        dataSets.add(new DataSet("Zbiór 2"));
+        dataSets.add(new DataSet("Zbiór 3"));
+    }
+
     public void addDataSet(DataSet dataSet) { dataSets.add(dataSet); }
     public void removeDataSet(String name) { dataSets.removeIf(dataSet -> dataSet.getName().equals(name)); }
     public DataSet findDataSetByName(String name) { return dataSets.stream().filter(dataSet -> dataSet.getName().equals(name)).findFirst().orElse(null); }
