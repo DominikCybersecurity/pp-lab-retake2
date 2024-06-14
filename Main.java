@@ -2,10 +2,9 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
+        
         StatisticsManager manager = new StatisticsManager();
-        manager.addDataSet(new DataSet("Zbiór 1"));
-        manager.addDataSet(new DataSet("Zbiór 2"));
-        manager.addDataSet(new DataSet("Zbiór 3"));
+
         Scanner scanner = new Scanner(System.in);
         scanner.useLocale(Locale.US); 
         
